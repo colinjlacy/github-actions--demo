@@ -68,5 +68,5 @@ jobs:
         with:
           url: https://api.render.com/v1/services/srv-cpa63tf109ks73aihobg/deploys 
           method: POST
-          bearerToken: '${{ secrets.RENDER_TOKEN }}'
+          bearerToken: '${{ secrets.RENDER_API_TOKEN }}'
           data: '{"imageUrl":"${{ needs.build.outputs.image-tag }}"}'
